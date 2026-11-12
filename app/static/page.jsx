@@ -2,7 +2,7 @@
 // LATIHAN 1: STATIC RENDERING (SSG)
 // ==============================================================================
 // Halaman ini dibuat 1 kali saat proses build. Waktunya tidak berubah saat di-refresh.
-
+export const dynamic = "force-dynamic";
 export default function StaticPage() {
   // Variabel waktu statis
   const waktuDibuat = new Date().toLocaleTimeString("id-ID");
@@ -12,14 +12,15 @@ export default function StaticPage() {
       <span className="badge badge-blue">Static Rendering</span>
       <h1 style={{ margin: "0 0 10px 0" }}>Halaman Statis</h1>
 
+
       {/* TODO 1: Ganti teks di dalam tag <p> di bawah ini dengan nama dan kelasmu! */}
-      <p style={{ color: "#38bdf8", fontSize: "18px" }}>
-        [Silakan tulis: Halo, nama saya (Nama Kamu) dari kelas (Kelas Kamu)]
-      </p>
+     <p style={{ color: "#38bdf8", fontSize: "18px" }}>
+  Halo, nama saya Faray Saleh Abdat, kalian bisa panggil saya profesor faray dan saya dari kelas 12.
+</p>
 
       {/* TODO 2: Tampilkan variabel waktuDibuat di dalam tag <b> di bawah ini */}
-      <p>
-        Waktu halaman dibuat: <b>{/* Tuliskan {waktuDibuat} di sini */}... WIB</b>
+      <p>   
+        Waktu halaman dibuat: <b>{waktuDibuat} WIB</b>
       </p>
 
       <div className="note">

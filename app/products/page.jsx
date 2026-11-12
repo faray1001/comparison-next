@@ -5,7 +5,7 @@
 // TODO 1: Atur waktu revalidate menjadi 10 detik.
 // Tulis: export const revalidate = 10; tepat di bawah ini.
 
-
+export const revalidate = 10;
 export default function ProductsPage() {
   // Variabel waktu pembuatan cache
   const waktuCache = new Date().toLocaleTimeString("id-ID");
@@ -26,7 +26,7 @@ export default function ProductsPage() {
         Waktu render cache:{" "}
         <b style={{ color: "#fbbf24", fontSize: "18px" }}>
           {/* Tuliskan {waktuCache} di sini */}
-          ... WIB
+          12:12 WIB
         </b>
       </p>
 
